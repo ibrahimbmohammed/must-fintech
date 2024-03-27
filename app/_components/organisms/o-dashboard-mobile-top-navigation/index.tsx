@@ -1,10 +1,8 @@
-import MenuIcon from '@lib/icons/dashboard/sidebar/MenuIcon';
-import { ISidebarSlideOverProps } from '@organisms/o-dashboard-mobile-sidebar-slideover/SidebarSlideOverProps.types';
-// import Image from 'next/image';
-// import Logo from '@assets/png/small.png';
-import ProfileDropDown from '@/app/_components/organisms/o-dashboard-top-navigation/m-profile-dropdown';
-import { getUserFromCookies } from '@/app/_lib/cookies';
-import DownArrowIcon from '@/app/_lib/icons/dashboard/down';
+import MenuIcon from "@lib/icons/dashboard/sidebar/MenuIcon";
+import { ISidebarSlideOverProps } from "@organisms/o-dashboard-mobile-sidebar-slideover/SidebarSlideOverProps.types";
+import ProfileDropDown from "@/app/_components/organisms/o-dashboard-top-navigation/m-profile-dropdown";
+import { getUserFromCookies } from "@/app/_lib/cookies";
+import DownArrowIcon from "@/app/_lib/icons/dashboard/down";
 
 function MobileTopNavigation({ toggleOpenSidebar }: ISidebarSlideOverProps) {
   const userData = getUserFromCookies();
@@ -18,7 +16,6 @@ function MobileTopNavigation({ toggleOpenSidebar }: ISidebarSlideOverProps) {
           onClick={toggleOpenSidebar}
         >
           <MenuIcon />
-          {/* <Image src={Logo.src} className="ml-[6px]" alt="logo" width={25} height={20} /> */}
         </button>
         <div className="mt-3">
           <ProfileDropDown position="-right-0">

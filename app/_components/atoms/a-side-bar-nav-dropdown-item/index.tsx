@@ -1,11 +1,18 @@
-'use client';
+/* eslint-disable react/display-name */
+"use client";
 
-import { SidebarNavDropDownItemProps } from '@lib/types/molecules';
-import Link from 'next/link';
-import { forwardRef, useEffect, useState } from 'react';
-import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { SidebarNavDropDownItemProps } from "@lib/types/molecules";
+import Link from "next/link";
+import { forwardRef, useEffect, useState } from "react";
+import {
+  MdOutlineKeyboardArrowDown,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 
-const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownItemProps>(
+const SidebarNavDropDownItem = forwardRef<
+  HTMLButtonElement,
+  SidebarNavDropDownItemProps
+>(
   ({
     id,
     path,
@@ -28,7 +35,7 @@ const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownI
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-      if ((asPath?.split('/') || '').length > 3) return;
+      if ((asPath?.split("/") || "").length > 3) return;
       setIsOpen(false);
     }, [asPath]);
     return (
@@ -36,17 +43,23 @@ const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownI
         <li className=" flex flex-col items-center justify-center w-full">
           <div
             className={`w-full flex items-center justify-between  ${
-              asPath === path || isOpen === true ? style!.active : style!.inactive
+              asPath === path || isOpen === true
+                ? style!.active
+                : style!.inactive
             } h-[3.1rem]`}
           >
             <button onClick={() => setIsOpen(!isOpen)} className={style!.link}>
               <i className="absolute top-4 left-0">
                 <Icon
                   className={`${
-                    path === asPath || isOpen === true ? style!.icon_active : style!.icon_inactive
+                    path === asPath || isOpen === true
+                      ? style!.icon_active
+                      : style!.icon_inactive
                   }`}
                   extraClassName={`${
-                    path === asPath ? style!.extra_icon_active : style!.extra_icon_inactive
+                    path === asPath
+                      ? style!.extra_icon_active
+                      : style!.extra_icon_inactive
                   }`}
                 />
               </i>
@@ -62,7 +75,7 @@ const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownI
 
           <div
             className={`overflow-hidden bg-[#000030] w-full ${
-              isOpen ? 'block' : 'hidden'
+              isOpen ? "block" : "hidden"
             } transition-all delay-200 ease-in-out`}
           >
             {subNavItems?.map((subNavItem) => {
@@ -70,7 +83,9 @@ const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownI
                 openDrawer && (
                   <li
                     className={`${
-                      subNavItem.path === asPath ? style!.activeInner : style!.inactive
+                      subNavItem.path === asPath
+                        ? style!.activeInner
+                        : style!.inactive
                     }`}
                     key={id}
                   >
@@ -101,7 +116,7 @@ const SidebarNavDropDownItem = forwardRef<HTMLButtonElement, SidebarNavDropDownI
         </li>
       </div>
     );
-  },
+  }
 );
 
 export default SidebarNavDropDownItem;
