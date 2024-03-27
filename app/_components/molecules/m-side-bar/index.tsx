@@ -8,7 +8,7 @@ import { MdMenu, MdOutlineMenuOpen } from "react-icons/md";
 import Image from "next/image";
 import BannerImage from "@assets/webp/sidenav.webp";
 import Link from "next/link";
-// bg-[#ECEFF9]
+
 const style = {
   active: "text-[#3F4765] pl-3 bg-[#F4F6F8] rounded-[0.3rem]",
   inactive:

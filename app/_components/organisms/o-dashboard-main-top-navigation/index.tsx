@@ -1,11 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
-import { useState } from 'react';
-import dayjs from 'dayjs';
-import { GoBell } from 'react-icons/go';
-// import Image from 'next/image';
-import ProfileDropDown from '@/app/_components/organisms/o-dashboard-top-navigation/m-profile-dropdown';
-import { getUserFromCookies } from '@/app/_lib/cookies';
+import { useState } from "react";
+import dayjs from "dayjs";
+import { GoBell } from "react-icons/go";
+import ProfileDropDown from "@/app/_components/organisms/o-dashboard-top-navigation/m-profile-dropdown";
+import { getUserFromCookies } from "@/app/_lib/cookies";
 
 function MainTopNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,11 +50,13 @@ function MainTopNavigation() {
                   height="45px"
                 />
               </ProfileDropDown>
-              <p className="text-sm font-light">Hello, {userData?.firstName ?? 'User'}</p>
+              <p className="text-sm font-light">
+                Hello, {userData?.firstName ?? "User"}
+              </p>
             </span>
 
             <span className="flex items-center justify-center px-[1rem] py-[0.4rem] bg-white rounded-2xl">
-              <p className="text-sm font-light">{now.format('MMMM DD')}</p>
+              <p className="text-sm font-light">{now.format("MMMM DD")}</p>
             </span>
           </div>
         </div>

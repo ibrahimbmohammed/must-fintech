@@ -1,18 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Transition from '@lib/hoc/transition-wrapper';
-import logo from '@assets/webp/logo.webp';
-import { v4 as uuidv4 } from 'uuid';
-import NavbarItem from '@atoms/a-nav-item';
-import { UrlObject } from 'url';
-import { usePathname } from 'next/navigation';
-
-import { IconProps } from '@lib/icons/dashboard/sidebar/Icon.types';
-import TechnicianIcon from '@lib/icons/technician';
-
-import Link from 'next/link';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import Transition from "@lib/hoc/transition-wrapper";
+import logo from "@assets/webp/logo.webp";
+import { v4 as uuidv4 } from "uuid";
+import NavbarItem from "@atoms/a-nav-item";
+import { UrlObject } from "url";
+import { usePathname } from "next/navigation";
+import { IconProps } from "@lib/icons/dashboard/sidebar/Icon.types";
+import TechnicianIcon from "@lib/icons/technician";
+import Link from "next/link";
+import Image from "next/image";
 
 interface NavBarProps {
   className?: string;
@@ -48,31 +46,13 @@ function Navbar({ className }: NavBarProps) {
 
   const routesItem: Route[] = [
     {
-      title: 'Home',
-      link: '/',
+      title: "Home",
+      link: "/",
       Icon: TechnicianIcon,
-      subTitle: 'Homepage',
+      subTitle: "Homepage",
     },
-    // {
-    //   title: 'Solutions',
-    //   link: '/solutions',
-    //   Icon: TechnicianIcon,
-    //   subTitle: 'Please Support Our Cause',
-    // },
-    // {
-    //   title: 'Pricing',
-    //   link: '/pricing',
-    //   Icon: TechnicianIcon,
-    //   subTitle: 'Please Support Our Cause',
-    // },
-    // {
-    //   title: 'Rescources',
-    //   link: '/resources',
-    //   Icon: TechnicianIcon,
-    //   subTitle: 'Please Support Our Cause',
-    // },
-    { title: 'Login', link: `/auth/login` },
-    { title: 'Register', link: '/auth/register' },
+    { title: "Login", link: `/auth/login` },
+    { title: "Register", link: "/auth/register" },
   ];
 
   return (
@@ -86,11 +66,18 @@ function Navbar({ className }: NavBarProps) {
               <div className="flex items-center justify-center space-x-1">
                 <div className="max-h-[5rem]  max-w-[5rem] cursor-pointer overflow-hidden ">
                   <Link href="/">
-                    <Image src={logo?.src} height={80} width={80} alt="navbar logo" />
+                    <Image
+                      src={logo?.src}
+                      height={80}
+                      width={80}
+                      alt="navbar logo"
+                    />
                   </Link>
                 </div>
                 <Link href="/" className="cursor-pointer">
-                  <span className="cursor-pointer text-xs font-semibold text-primaryColor"> </span>
+                  <span className="cursor-pointer text-xs font-semibold text-primaryColor">
+                    {" "}
+                  </span>
                 </Link>
               </div>
             </div>
@@ -99,7 +86,8 @@ function Navbar({ className }: NavBarProps) {
               <div className=" flex w-full items-center justify-between">
                 <div className="flex space-x-4 pl-16 xl:space-x-9 xl:pl-0 ">
                   {(routesItem || []).map((item: Route) => {
-                    if (item.title === 'Login' || item.title === 'Register') return null;
+                    if (item.title === "Login" || item.title === "Register")
+                      return null;
 
                     return (
                       <NavbarItem
@@ -116,7 +104,7 @@ function Navbar({ className }: NavBarProps) {
 
                 <div className="flex space-x-10 ">
                   {(routesItem || []).map((item: Route) => {
-                    if (item.title === 'Login' || item.title === 'Register') {
+                    if (item.title === "Login" || item.title === "Register") {
                       return (
                         <NavbarItem
                           key={uuidv4()}
@@ -180,7 +168,7 @@ function Navbar({ className }: NavBarProps) {
         </div>
       </div>
 
-      <Transition show={isOpen} height={isSubOpen ? 'h-fit' : 'h-40'}>
+      <Transition show={isOpen} height={isSubOpen ? "h-fit" : "h-40"}>
         <div className="lg:hidden">
           <div className="ml-3 mb-3 flex flex-col space-y-8 bg-white px-2 pt-2 pb-3 lg:px-3">
             {(routesItem || []).map((item: Route) => {

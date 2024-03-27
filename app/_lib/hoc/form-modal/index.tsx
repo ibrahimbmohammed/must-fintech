@@ -68,12 +68,12 @@ const FormModal = ({
               {showTitle && (
                 <Dialog.Title
                   as="div"
-                  className="flex items-center  justify-between border-b  border-[#D7D8DA] pt-1 pb-2"
+                  className="flex items-center  justify-between border-b  border-[#D7D8DA] pt-0 pb-2"
                 >
-                  <div className="w-[95%] pl-4 flex items-end  text-lg font-medium ">
-                    <p className="pt-2 text-black text-xl">{title}</p>
+                  <div className="w-[95%] pl-6 flex items-end  text-lg font-medium ">
+                    <p className="pt-0 text-black text-lg">{title}</p>
                   </div>
-                  <div className="pr-2 ">
+                  <div className="pr-3 ">
                     <button
                       type="button"
                       className=""
