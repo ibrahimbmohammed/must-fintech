@@ -31,8 +31,8 @@ function RegisterFormWithExtra() {
               승인거부 사유
             </p>
           </div>
-          <div className="flex-[70%] flex items-center pl-[9px] border-b border-[#D7D8DA]">
-            <div className="w-[32rem] flex flex-col">
+          <div className="flex-[70%] flex items-center pl-[9px] border-[#D7D8DA]">
+            <div className="w-[36rem] flex flex-col">
               <div className="flex space-x-2">
                 <div className="">
                   <CheckBoxs />
@@ -82,9 +82,9 @@ function RegisterFormWithExtra() {
                   직접 입력
                 </p>
               </div>
-              <div className="flex ml-[1.2rem]">
+              <div className="flex ml-[13px]">
                 <textarea
-                  className="bg-[#B1B4BB] h-[120px] w-[33rem] rounded-lg"
+                  className="bg-[#B1B4BB] h-[100px] w-[34.5rem] rounded-lg"
                   name=""
                   id=""
                   cols={30}
