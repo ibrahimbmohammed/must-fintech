@@ -7,51 +7,56 @@ function RegisterForm() {
     <div className="flex flex-col">
       <div className="flex  mt-[1.3rem] flex-col mx-[24px] border border-[#D7D8DA]">
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
-            <p className="text-[16px] pl-2">회원번호</p>
+          <div className="bg-[rgb(238,240,244)] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+            <p className="text-[16px] text-black pl-[7px] pb-[1px]">회원번호</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[22px] border-b border-[#D7D8DA]">
-            <p className="font-[200] tracking-[0.06rem] text-xs">abc111</p>
+            <p className="font-[200] text-black tracking-[0.06rem] text-xs">
+              abc111
+            </p>
           </div>
         </div>
         <div className="flex">
           <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
-            <p className="text-[16px] pl-2">회원명/법인명</p>
+            <p className="text-[16px] text-black pl-2 ">회원명/법인명</p>
           </div>
-          <div className="flex-[70%] flex items-center pl-[22px] border-b border-[#D7D8DA]">
-            <p className="font-[200] text-xs tracking-[0.06rem] ">김길동</p>
+          <div className="flex-[70%] flex items-center pl-[23px] border-b border-[#D7D8DA]">
+            <p className="font-[200] text-black text-xs tracking-[0.06rem] ">
+              김길동
+            </p>
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
-            <p className="text-[16px] pl-2">투자유형</p>
+          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-[11px]">
+            <p className="text-[16px] text-black pl-1 pt-[1.2px]">투자유형</p>
           </div>
-          <div className="flex-[70%] flex items-center pl-2 border-b border-[#D7D8DA]">
-            <div className="w-fit">
+          <div className="flex-[70%] flex items-center pl-[9px] border-b border-[#D7D8DA]">
+            <div className="w-[12rem] ">
               <OptionsComponent
-                className="w-[149px] h-[38px] font-[200] pl-[10.3px] rounded-[6px] text-black border dark:border-black"
+                arrowClassName=" right-0 "
+                className="w-[283.5px] h-[38px] font-[200] pl-[10.3px] rounded-[9px] text-black border dark:border-black"
                 items={aprovalList}
               />
             </div>
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] items-center flex-[12%] h-[49px] flex pl-2">
-            <p className="text-[16px] pl-2">서류첨부</p>
+          <div className="bg-[#EEF0F4] items-center flex-[12%] h-[49px] flex pl-[11px] pt-[2px] ">
+            <p className="text-[16px] text-black  pl-1 ">서류첨부</p>
           </div>
-          <div className="flex-[70%] flex items-center pl-2  ">
-            <div className="px-[4px] py-[1px] rounded-lg bg-[#EBEEF3] border border-[#D7D8DA]">
-              <p className="font-[200]">파일 선택</p>
+          <div className="flex-[70%] flex items-center pl-2 pt-[1px] ">
+            <div className="px-[12px] py-[6px] rounded-lg bg-[#EBEEF3] border border-[#D7D8DA]">
+              <p className="font-[200] text-black text-[14px]">파일 선택</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col mb-[1.8rem] mt-[1rem] mx-[2.7rem]">
-        <p className="text-[11.2px] font-thin">
+      <div className="flex flex-col mb-[2rem] mt-[0.8rem] mx-[2.7rem]">
+        <p className="text-[11.9px] leading-3 tracking-[0.04rem] text-black font-[200]">
           파일 형식은 jpg, jpeg, gif, png, pdf만 가능합니다.
         </p>
-        <p className="text-[12px]  font-thin">
+        <p className="text-[11.9px] pt-[5px] tracking-[0.05rem] text-black font-[200]">
           최대 10개, 100MB까지 등록이 가능합니다.
         </p>
       </div>

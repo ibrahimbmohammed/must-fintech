@@ -67,7 +67,7 @@ function Sidebar({
       } ${
         isSmall
           ? "w-[15rem]  max-w-[15rem]"
-          : " fixed w-[15.5rem] max-w-[15.5rem] "
+          : " fixed w-[15.2rem] max-w-[15.2rem]  "
       } `}
     >
       <div

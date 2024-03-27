@@ -7,6 +7,7 @@ import CancelIcon from "../../svg/cancle-icon";
 
 interface Props {
   title: string;
+  icon: React.ReactNode;
   showTitle?: boolean;
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
@@ -16,8 +17,9 @@ interface Props {
   autoClose?: boolean;
 }
 
-const FormModal = ({
+const NotificationModal = ({
   title,
+  icon,
   showTitle = true,
   isOpen,
   setIsOpen,
@@ -67,12 +69,12 @@ const FormModal = ({
               {showTitle && (
                 <Dialog.Title
                   as="div"
-                  className="flex items-center  justify-between border-b  border-[#D7D8DA] pt-0 pb-2"
+                  className="flex items-center  justify-between  pt-0 pb-2"
                 >
                   <div className="w-[95%] pl-6 flex items-end  text-lg font-medium ">
-                    <p className="pt-0 text-black text-lg">{title}</p>
+                    <p className="pt-0 pr-[4px] text-black text-lg">{icon}</p>
                   </div>
-                  <div className="pr-3 ">
+                  <div className="pr-[16px] pt-[3px] ">
                     <button
                       type="button"
                       className=""
@@ -92,4 +94,4 @@ const FormModal = ({
   );
 };
 
-export default FormModal;
+export default NotificationModal;
