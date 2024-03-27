@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/no-unresolved */
-import { IconProps } from '@lib/icons/dashboard/sidebar/Icon.types';
-import { type } from 'os';
-import React from 'react';
+import { IconProps } from "@lib/icons/dashboard/sidebar/Icon.types";
+import React from "react";
 
 // interface defaultProps{
 //     className: string
