@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary: #e6e8ea;
+  --secondary: #6f80a0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +32,55 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.dashboard-content {
+  position: absolute;
+  min-height: 100%;
+  width: calc(100% - 15rem);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  left: 15rem;
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+
+.dashboard-child {
+  padding: 0rem 0.1rem 0rem 0rem;
+  padding-top: 5.95rem;
+}
+
+@media screen and (min-width: 1512px) {
+  .dashboard-child {
+    padding: 0rem 0rem 0rem 2rem;
+    padding-top: 5.95rem;
+  }
+}
+
+@media screen and (min-width: 1712px) {
+  .dashboard-child {
+    padding: 0rem 2rem 0rem 1rem;
+    padding-top: 5.95rem;
+  }
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
 }
