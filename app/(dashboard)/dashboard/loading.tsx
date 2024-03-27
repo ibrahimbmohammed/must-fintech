@@ -1,4 +1,4 @@
-import LoadingScreen from '@/app/_components/atoms/a-Spinner';
+import LoadingScreen from "@/app/_components/atoms/a-spinner";
 
 export default function Loading() {
   // Or a custom loading skeleton component
