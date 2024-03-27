@@ -51,7 +51,7 @@ export default function Home() {
 
       <FormModal
         title="투자유형 변경 "
-        width=" w-[20rem] sm:w-[40rem]  xl:w-[45rem]"
+        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[29rem]"
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >
