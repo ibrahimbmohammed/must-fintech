@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useEffect } from 'react';
-import { Button } from '@/app/_components/atoms/a-button';
-import ErrorImg from '@/public/assets/webp/error.webp';
+import Image from "next/image";
+import { useEffect } from "react";
+import { Button } from "@/app/_components/atoms/a-button";
+import ErrorImg from "@/public/assets/webp/error.webp";
 
 export default function Error({
   error,
@@ -25,8 +25,13 @@ export default function Error({
       </div>
 
       <div className="mt-4">
-        <Button onClick={() => reset()} type="submit" variant="primary2" size="xfull">
-          <p className="font-[600] text-sm group-hover:text-[#5D17EB] text-[#FFFFFF] px-[1rem]">
+        <Button
+          onClick={() => reset()}
+          type="submit"
+          variant="primary"
+          size="default"
+        >
+          <p className="font-[600] text-sm  text-[#FFFFFF] px-[1rem]">
             Try again
           </p>
         </Button>

@@ -1,5 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 "use client";
 
 import Sidebar from "@molecules/m-side-bar";
@@ -7,8 +5,8 @@ import NavItems from "@lib/constants/sidebar/NavItems";
 import MainTopNavigation from "@organisms/o-dashboard-main-top-navigation";
 import useWindowSize, { Size } from "@/app/_lib/hooks/use-window-size";
 import useToggle from "@/app/_lib/hooks/use-toggle";
-import SidebarSlideOver from "../../organisms/o-dashboard-mobile-sidebar-slideover";
-import MobileTopNavigation from "../../organisms/o-dashboard-mobile-top-navigation";
+import SidebarSlideOver from "@organisms/o-dashboard-mobile-sidebar-slideover";
+import MobileTopNavigation from "@organisms/o-dashboard-mobile-top-navigation";
 
 interface IDashboardLayoutProps {
   children: React.ReactNode;
