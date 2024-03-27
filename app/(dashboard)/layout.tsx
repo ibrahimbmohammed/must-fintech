@@ -1,14 +1,15 @@
 import Providers from "@store/provider";
 import "@styles/globals.css";
 import localFont from "next/font/local";
-import ToastContainerWrapper from "../_components/molecules/m-toast-wrapper";
-import DashboardLayout from "../_components/layout/dashboard";
+import ToastContainerWrapper from "@molecules/m-toast-wrapper";
+import DashboardLayout from "@layout/dashboard";
 
 /**
  * Documentaion for the dashboard layout
  * @example
  * any component added to this layout would appear in every dashboard pages of the application.
  * related pages such as. localhost:dashboard/audit, etc.
+ *
  */
 
 const pretendard = localFont({
