@@ -30,7 +30,7 @@ const Copy: React.FC = () => {
         setIsOpen={setIsOpen}
       >
         <RegisterFormWithExtra />
-        <div className="flex border-t border-[#D7D8DA] pt-[25px] w-full items-center space-x-2  justify-center">
+        <div className="flex border-t border-[#D7D8DA] pt-[25px] w-full items-center  flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2  justify-center">
           <Button
             onClick={() => handleIsOpen && handleIsOpen()}
             className="px-[4.1rem] py-[.6rem]"

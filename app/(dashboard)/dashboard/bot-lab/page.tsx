@@ -27,7 +27,7 @@ const BotLab: React.FC = () => {
       <NotificationModal
         icon={<WaringIcon />}
         title="form"
-        width=" w-[20rem]  sm:w-[40rem]  xl:w-[25rem] xl:h-[198px]"
+        width=" w-[20rem] h-[228px]  sm:w-[40rem]  xl:w-[25rem] xl:h-[198px]"
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >

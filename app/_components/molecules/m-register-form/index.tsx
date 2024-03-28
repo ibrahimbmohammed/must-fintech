@@ -8,7 +8,7 @@ function RegisterForm() {
     <div className="flex flex-col">
       <div className="flex  mt-[1.3rem] flex-col mx-[24px] border border-[#D7D8DA]">
         <div className="flex">
-          <div className="bg-[rgb(238,240,244)] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+          <div className="bg-[rgb(238,240,244)] border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2">
             <p className="text-[16px] text-black pl-[7px] pb-[1px]">회원번호</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[22px] border-b border-[#D7D8DA]">
@@ -18,7 +18,7 @@ function RegisterForm() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2">
             <p className="text-[16px] text-black pl-2 ">회원명/법인명</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[23px] border-b border-[#D7D8DA]">
@@ -28,7 +28,7 @@ function RegisterForm() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[12%] h-[49px] flex pl-[11px]">
+          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-[11px]">
             <div className="relative">
               <span className="absolute  top-[-5px] left-[53px]">
                 <LuDot className="text-[#FF4D4F] text-[25px]" />
@@ -37,17 +37,17 @@ function RegisterForm() {
             </div>
           </div>
           <div className="flex-[70%] flex items-center pl-[9px] border-b border-[#D7D8DA]">
-            <div className="w-[12rem] ">
+            <div className="lg:w-[12rem] ">
               <OptionsComponent
                 arrowClassName=" right-0 "
-                className="w-[283.5px] h-[38px] font-[200] pl-[10.3px] rounded-[9px] text-black border dark:border-black"
+                className="lg:w-[283.5px] h-[38px] font-[200] pl-[10.3px] rounded-[9px] text-black border dark:border-black"
                 items={aprovalList}
               />
             </div>
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4]  items-center flex-[12%] h-[49px] flex pl-[11px] pt-[2px] ">
+          <div className="bg-[#EEF0F4]  items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-[11px] pt-[2px] ">
             <div className="relative">
               <p className="text-[16px] text-black  pl-1 ">서류첨부</p>
               <span className="absolute top-[-6px] left-[52px]">

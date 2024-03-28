@@ -7,7 +7,7 @@ function RegisterFormWithExtra() {
     <div className="flex flex-col">
       <div className="flex  mt-[1.2rem] mb-[2rem] flex-col mx-[24px] border border-[#D7D8DA]">
         <div className="flex">
-          <div className="bg-[rgb(238,240,244)] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+          <div className="bg-[rgb(238,240,244)] border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2">
             <p className="text-[16px] text-black pl-[7px] pb-[1px]">회원번호</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[22px] border-b border-[#D7D8DA]">
@@ -17,7 +17,7 @@ function RegisterFormWithExtra() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2">
             <p className="text-[16px] text-black pl-2 ">회원명/법인명</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[23px] border-b border-[#D7D8DA]">
@@ -27,7 +27,7 @@ function RegisterFormWithExtra() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4]  items-center flex-[12%] h-[300px] flex pl-[11px]">
+          <div className="bg-[#EEF0F4]  items-center min-w-[7rem] flex-[50%] lg:flex-[12%] h-[300px] flex pl-[11px]">
             <div className="relative">
               <span className="absolute top-[-5px] left-[84px]">
                 <LuDot className="text-[#FF4D4F] text-[25px]" />
@@ -38,8 +38,8 @@ function RegisterFormWithExtra() {
               </p>
             </div>
           </div>
-          <div className="flex-[70%] flex items-center pl-[9px] border-[#D7D8DA]">
-            <div className="w-[36rem] flex flex-col space-y-[-2px]">
+          <div className="lg:flex-[70%]  overflow-x-scroll flex items-center lg:pl-[9px] border-[#D7D8DA]">
+            <div className="lg:w-[36rem] flex flex-col space-y-[-2px]">
               <div className="flex space-x-[-1.8px]">
                 <div className="">
                   <CheckBoxs />
