@@ -71,8 +71,8 @@ const NotificationModal = ({
                   as="div"
                   className="flex items-center  justify-between  pt-0 pb-2"
                 >
-                  <div className="w-[95%] pl-6 flex items-end  text-lg font-medium ">
-                    <p className="pt-0 pr-[4px] text-black text-lg">{icon}</p>
+                  <div className="w-[95%] pl-[21px] flex items-end  text-lg font-medium ">
+                    <p className="pt-0 pr-[0px] text-black text-lg">{icon}</p>
                   </div>
                   <div className="pr-[16px] pt-[3px] ">
                     <button

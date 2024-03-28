@@ -63,8 +63,8 @@ const DataTable = ({ handleIsOpen }: DataTableProps) => {
             신청 목록
           </p>
           <div className="">
-            <p className="text-black text-xs lg:text-sm mt-[2px]">
-              (총 100명 | 승인대기 1건)
+            <p className="text-black text-xs flex lg:text-sm mt-[2px]">
+              (총 100명 | 승인대기 <p className="text-[#FF4D4F]">1</p>건)
             </p>
           </div>
         </div>

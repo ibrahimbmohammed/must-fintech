@@ -12,9 +12,7 @@ const BotLab: React.FC = () => {
   const handleIsOpen = () => {
     setIsOpen(true);
   };
-  const handleIsOpenSecond = () => {
-    setIsOpenSecond(true);
-  };
+
   return (
     <>
       <div className="bg-white w-screen h-screen">
@@ -34,7 +32,7 @@ const BotLab: React.FC = () => {
         setIsOpen={setIsOpen}
       >
         <div className="w-full pl-[24.6px] mt-[0px]  ">
-          <p className="text-[17px] text-black leading-[18px] font-semibold  tracking-[0.035rem]">
+          <p className="text-[17px] text-black leading-[18px] font-semibold  tracking-[0.04rem]">
             최대 10개까지 등록 가능합니다.
           </p>
         </div>
@@ -45,33 +43,6 @@ const BotLab: React.FC = () => {
             variant={"primary"}
           >
             확인
-          </Button>
-        </div>
-      </NotificationModal>
-      <NotificationModal
-        icon={<WaringIcon />}
-        title="form"
-        width=" w-[20rem] sm:w-[40rem]  xl:w-[25rem] xl:h-[12.3rem]"
-        isOpen={isOpenSecond}
-        setIsOpen={setIsOpenSecond}
-      >
-        <div className="w-full ">
-          <p className="">선택된 신청건이 없습니다.</p>
-        </div>
-        <div className="flex  pt-[4px] w-full items-center space-x-2  justify-center">
-          <Button
-            onClick={() => handleIsOpen && handleIsOpen()}
-            className="px-[4.1rem] py-[.6rem]"
-            variant={"primary"}
-          >
-            저장
-          </Button>
-          <Button
-            onClick={() => handleIsOpen && handleIsOpen()}
-            className="px-[4.1rem] py-[.5rem]"
-            variant={"outline"}
-          >
-            취소
           </Button>
         </div>
       </NotificationModal>

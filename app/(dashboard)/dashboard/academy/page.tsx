@@ -24,8 +24,8 @@ const Copy: React.FC = () => {
         </Button>
       </div>
       <FormModal
-        title="승인거부 사유 입력"
-        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[38.5rem]"
+        title="서류 보기"
+        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[48.5rem]"
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >
