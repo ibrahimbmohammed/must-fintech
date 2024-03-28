@@ -3,7 +3,7 @@
 import { useState } from "react";
 import NotificationModal from "@lib/hoc/notification-modal";
 import { Button } from "@atoms/a-button";
-import WaringIcon from "@/app/_lib/svg/warning-icon";
+import WaringIcon from "@lib/svg/warning-icon";
 
 const BotLab: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

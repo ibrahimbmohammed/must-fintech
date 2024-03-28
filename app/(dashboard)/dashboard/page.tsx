@@ -7,7 +7,7 @@ import FormModal from "@lib/hoc/form-modal";
 import MyTabs from "@lib/hoc/tab";
 import { homeTabItems } from "@lib/constants/topbar";
 import { Button } from "@atoms/a-button";
-import RegisterForm from "@/app/_components/molecules/m-register-form";
+import RegisterForm from "@molecules/m-register-form";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
