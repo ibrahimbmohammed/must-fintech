@@ -1,5 +1,6 @@
 import React from "react";
 import CheckBoxs from "@atoms/a-checkbox";
+import { LuDot } from "react-icons/lu";
 
 function RegisterFormWithExtra() {
   return (
@@ -26,10 +27,16 @@ function RegisterFormWithExtra() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] items-center flex-[12%] h-[300px] flex pl-[11px]">
-            <p className="text-[16px] text-black pl-1 pt-[1.2px]">
-              승인거부 사유
-            </p>
+          <div className="bg-[#EEF0F4]  items-center flex-[12%] h-[300px] flex pl-[11px]">
+            <div className="relative">
+              <span className="absolute top-[-5px] left-[84px]">
+                <LuDot className="text-[#FF4D4F] text-[25px]" />
+              </span>
+
+              <p className="text-[16px] text-black pl-1 pt-[1.2px]">
+                승인거부 사유
+              </p>
+            </div>
           </div>
           <div className="flex-[70%] flex items-center pl-[9px] border-[#D7D8DA]">
             <div className="w-[36rem] flex flex-col space-y-[-2px]">

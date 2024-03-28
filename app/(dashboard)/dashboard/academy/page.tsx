@@ -25,7 +25,7 @@ const Copy: React.FC = () => {
       </div>
       <FormModal
         title="서류 보기"
-        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[48.5rem]"
+        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[52.5rem]"
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >

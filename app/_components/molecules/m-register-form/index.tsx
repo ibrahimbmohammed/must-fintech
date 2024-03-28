@@ -1,5 +1,6 @@
 import React from "react";
 import OptionsComponent from "../m-options-component";
+import { LuDot } from "react-icons/lu";
 import { aprovalList } from "@lib/constants/options-data";
 
 function RegisterForm() {
@@ -17,7 +18,7 @@ function RegisterForm() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
+          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[12%] h-[49px] flex pl-2">
             <p className="text-[16px] text-black pl-2 ">회원명/법인명</p>
           </div>
           <div className="flex-[70%] flex items-center pl-[23px] border-b border-[#D7D8DA]">
@@ -27,8 +28,13 @@ function RegisterForm() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[12%] h-[49px] flex pl-[11px]">
-            <p className="text-[16px] text-black pl-1 pt-[1.2px]">투자유형</p>
+          <div className="bg-[#EEF0F4]  border-b border-white items-center flex-[12%] h-[49px] flex pl-[11px]">
+            <div className="relative">
+              <span className="absolute  top-[-5px] left-[53px]">
+                <LuDot className="text-[#FF4D4F] text-[25px]" />
+              </span>
+              <p className="text-[16px] text-black pl-1 pt-[1.2px]">투자유형</p>
+            </div>
           </div>
           <div className="flex-[70%] flex items-center pl-[9px] border-b border-[#D7D8DA]">
             <div className="w-[12rem] ">
@@ -41,8 +47,13 @@ function RegisterForm() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] items-center flex-[12%] h-[49px] flex pl-[11px] pt-[2px] ">
-            <p className="text-[16px] text-black  pl-1 ">서류첨부</p>
+          <div className="bg-[#EEF0F4]  items-center flex-[12%] h-[49px] flex pl-[11px] pt-[2px] ">
+            <div className="relative">
+              <p className="text-[16px] text-black  pl-1 ">서류첨부</p>
+              <span className="absolute top-[-6px] left-[52px]">
+                <LuDot className="text-[#FF4D4F] text-[25px]" />
+              </span>
+            </div>
           </div>
           <div className="flex-[70%] flex items-center pl-2 pt-[1px] ">
             <div className="px-[12px] py-[6px] rounded-lg bg-[#EBEEF3] border border-[#D7D8DA]">
@@ -53,12 +64,22 @@ function RegisterForm() {
       </div>
 
       <div className="flex flex-col mb-[2rem] mt-[0.8rem] mx-[2.7rem]">
-        <p className="text-[11.9px] leading-3 tracking-[0.04rem] text-black font-[200]">
-          파일 형식은 jpg, jpeg, gif, png, pdf만 가능합니다.
-        </p>
-        <p className="text-[11.9px] pt-[5px] tracking-[0.05rem] text-black font-[200]">
-          최대 10개, 100MB까지 등록이 가능합니다.
-        </p>
+        <div className="relative">
+          <span className="absolute top-[-1px] left-[-18px]">
+            <LuDot className="text-black" />
+          </span>
+          <p className="text-[11.9px] leading-3 tracking-[0.04rem] text-black font-[200]">
+            파일 형식은 jpg, jpeg, gif, png, pdf만 가능합니다.
+          </p>
+        </div>
+        <div className="relative">
+          <span className="absolute top-[5px] left-[-18px]">
+            <LuDot className="text-black" />
+          </span>
+          <p className="text-[11.9px] pt-[5px] tracking-[0.05rem] text-black font-[200]">
+            최대 10개, 100MB까지 등록이 가능합니다.
+          </p>
+        </div>
       </div>
     </div>
   );
