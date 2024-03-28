@@ -16,28 +16,15 @@ function RegisterFormWithImage() {
             </div>
           </div>
           <div className="lg:flex-[70%] h-[41rem] overflow-y-scroll flex items-center lg:pl-[9px] border-[#D7D8DA]">
-            <div className="lg:w-[36rem]  flex flex-col space-y-[8px] scroll-y-1 overflow-hidden overflow-y-scroll ">
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
-              <div className="w-[560px] snap-center  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]">
-                <p className="text-[#5A616A]">img</p>
-              </div>
+            <div className="lg:w-[36rem]  flex flex-col space-y-[18px] scroll-y-1 overflow-hidden overflow-y-scroll ">
+              {new Array(7)?.fill(" ")?.map((_, i) => (
+                <div
+                  key={i}
+                  className="w-[560px] ml-[5px] mt-[1.4rem]  h-[645px] flex items-center justify-center rounded-md border border-[#CED0D5] bg-[#FAFAFA]"
+                >
+                  <p className="text-[#5A616A] text-lg">img</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

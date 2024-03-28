@@ -17,11 +17,11 @@ function RegisterFormWithExtra() {
           </div>
         </div>
         <div className="flex">
-          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2">
-            <p className="text-[16px] text-black pl-2 ">회원명/법인명</p>
+          <div className="bg-[#EEF0F4] border-b border-white items-center flex-[50%] lg:flex-[12%] h-[49px] flex pl-2 pt-[4px]">
+            <p className="text-[16px] text-black pl-2  ">회원명/법인명</p>
           </div>
-          <div className="flex-[70%] flex items-center pl-[23px] border-b border-[#D7D8DA]">
-            <p className="font-[200] text-black text-xs tracking-[0.06rem] ">
+          <div className="flex-[70%] flex items-center pt-[2px] pl-[23px] border-b border-[#D7D8DA]">
+            <p className="font-[200] text-black text-xs tracking-[0.07rem] ">
               김길동, ㈜가나다라투자
             </p>
           </div>
@@ -39,59 +39,67 @@ function RegisterFormWithExtra() {
             </div>
           </div>
           <div className="lg:flex-[70%]  overflow-x-scroll flex items-center lg:pl-[9px] border-[#D7D8DA]">
-            <div className="lg:w-[36rem] flex flex-col space-y-[-2px]">
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+            <div className="lg:w-[36rem] flex flex-col space-y-[0] ">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem] ">
+                <div className="pt-[2px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px]">
+                <p className="font-[300] text-[14px] text-black text-xs tracking-[0.04rem] mt-[1px]">
                   서류 식별 불가
                 </p>
               </div>
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem]">
+                <div className="pt-[2px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px] ">
+                <p className="font-[300] text-[14px] text-black text-xs tracking-[0.04rem] mt-[1px] ">
                   필수 서류 누락
                 </p>
               </div>
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem] ">
+                <div className="pt-[6px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px]">
-                  서류의 내용이 등록된 회원정보와 다름
-                </p>
+                <div className="mt-[2px]">
+                  <p className="font-[300] text-[14px] text-black text-xs tracking-[0.04rem] ">
+                    서류의 내용이 등록된 회원정보와 다름
+                  </p>
+                </div>
               </div>
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem]">
+                <div className="pt-[7px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px]">
-                  서류에 누락된 내용이 있음 (필수정보, 회사직인, 본인날인,
-                  본인서명 등)
-                </p>
+                <div className="mt-[2px]">
+                  <p className="font-[300] text-[14px] text-black text-xs tracking-[0.01rem] ">
+                    서류에 누락된 내용이 있음 (필수정보, 회사직인, 본인날인,
+                    본인서명 등)
+                  </p>
+                </div>
               </div>
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem]">
+                <div className="pt-[8px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px]">
-                  서류의 유효기간이 초과됨
-                </p>
+                <div className="mt-[2px]">
+                  <p className="font-[300] text-[14px] text-black text-xs tracking-[0.04rem] mt-[1px]">
+                    서류의 유효기간이 초과됨
+                  </p>
+                </div>
               </div>
-              <div className="flex space-x-[-1.8px]">
-                <div className="">
+              <div className="flex space-x-[-1.8px] items-start h-[1.7rem]">
+                <div className="pt-[8px]">
                   <CheckBoxs />
                 </div>
-                <p className="font-[200] text-[13px] text-black text-xs tracking-[0.06rem] mt-[1px]">
-                  직접 입력
-                </p>
+                <div className="mt-[4px]">
+                  <p className="font-[300] text-[14px] text-black text-xs tracking-[0.04rem] mt-[0px]">
+                    직접 입력
+                  </p>
+                </div>
               </div>
               <div className="flex ml-[13px]">
                 <textarea
-                  className="bg-[#B1B4BB] text-black pl-1 focus:outline-none h-[100px] w-[34.5rem] rounded-lg"
+                  className="bg-[#DDE0E5] text-black pl-3 pt-3 mt-1 focus:outline-none h-[99px] w-[34.5rem] rounded-lg placeholder:text-[13px] placeholder:font-[300]"
                   name=""
                   id=""
                   placeholder="사유 입력"
