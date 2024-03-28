@@ -26,7 +26,7 @@ const Pagination: React.FC<PaginationProps> = ({
   pageCount,
 }) => {
   return (
-    <div className="flex justify-center items-center px-5 py-3 font-bold whitespace-nowrap bg-gray-100 backdrop-blur-sm space-x-[16px]">
+    <div className="flex justify-center pl-[18rem] lg:pl-0 overflow-x-auto items-center px-5 py-3 font-bold whitespace-nowrap bg-gray-100 backdrop-blur-sm space-x-[16px]">
       <div className="flex">
         <button
           className="flex items-center justify-center   w-[40px] h-[40px] px-[.5rem] py-[.5rem] disabled:border-gray-200 rounded-md cursor-pointer"

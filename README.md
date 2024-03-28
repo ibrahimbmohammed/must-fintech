@@ -2,7 +2,7 @@ This is indeed a [Next.js](https://nextjs.org/) project bootstrapped with [`crea
 
 ## Project Set up
 
-1.  git clone https://github.com/peddlesoft/headless-typescript.git, clone project from the git repository to your working directory on your machine.
+1.  git clone https://github.com/ibrahimbmohammed/must-fintech.git, clone project from the git repository to your working directory on your machine.
 2.  run the `yarn` command on you system to install all needed dependencies in your project, please use yarn, as it is the package manage of choice for this project. dont have yarn ? [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
 3.  vs code settings, make sure you have the eslint and prettier extensions installed on you vs code, in your vscode make prettier your default formater, and enable the format on save feature on your vs code.
 

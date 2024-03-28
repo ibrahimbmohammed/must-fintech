@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@atoms/a-button";
 import FormModal from "@lib/hoc/form-modal";
-import RegisterFormWithExtra from "@molecules/m-register-form-with-extra";
+import RegisterFormWithImage from "@molecules/m-register-form-with-image";
 
 const Copy: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +25,12 @@ const Copy: React.FC = () => {
       </div>
       <FormModal
         title="서류 보기"
-        width=" w-[20rem] sm:w-[40rem]  xl:w-[50rem] xl:h-[52.5rem]"
+        width=" w-[20rem] sm:w-[40rem] overflow-hidden xl:w-[50rem] xl:h-[54rem]"
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >
-        <RegisterFormWithExtra />
-        <div className="flex border-t border-[#D7D8DA] pt-[25px] w-full items-center flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2   justify-center">
+        <RegisterFormWithImage />
+        <div className="flex border-t border-[#D7D8DA]  pt-[25px] w-full items-center flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2   justify-center">
           <Button
             onClick={() => handleIsOpen && handleIsOpen()}
             className="px-[4.1rem] py-[.6rem]"
