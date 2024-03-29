@@ -60,7 +60,7 @@ const columns: ColumnDef<Application>[] = [
     enableResizing: true,
     cell: ({ row }) => {
       return (
-        <div className="">
+        <div className="2xl:flex 2xl:item-center 2xl:justify-center">
           <TableDocToSubmit row={row} />
         </div>
       );
@@ -72,7 +72,7 @@ const columns: ColumnDef<Application>[] = [
     enableResizing: true,
     cell: ({ row }) => {
       return (
-        <div className="">
+        <div className="2xl:flex 2xl:item-center 2xl:justify-center">
           <TableAppDateTime row={row} />
         </div>
       );
@@ -84,7 +84,7 @@ const columns: ColumnDef<Application>[] = [
     enableResizing: true,
     cell: ({ row }) => {
       return (
-        <div className="">
+        <div className="2xl:flex 2xl:item-center 2xl:justify-center">
           <TableStatus row={row} />
         </div>
       );
@@ -108,7 +108,7 @@ const columns: ColumnDef<Application>[] = [
     enableResizing: true,
     cell: ({ row }) => {
       return (
-        <div className=" ">
+        <div className="2xl:flex 2xl:item-center 2xl:justify-center ">
           <TableApprovalDateTime row={row} />
         </div>
       );

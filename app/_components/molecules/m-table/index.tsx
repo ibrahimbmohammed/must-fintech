@@ -35,7 +35,7 @@ const style = {
   tableHeadCol:
     "pl-[1px] pr-[1px] pt-[22px] pb-[19.5px] tracking-[0.04rem] text-center border-x border-[#fff] text-[16px] ",
   tableBodyRow:
-    " odd:bg-white even:bg-[#F9F9FB]  font-[300] h-[42px] text-[14px] text-center text-[#525252]  hover:bg-gray-50",
+    " odd:bg-white even:bg-[#F9F9FB]  font-[300] h-[42px] text-[14px] text-center text-[#525252]  hover:bg-gray-50 2xl:text-center 2xl:border",
   tableBodyCol: "  ",
 };
 
